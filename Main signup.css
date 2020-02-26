@@ -1,0 +1,300 @@
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width:100%;
+        padding:0 2%;
+    }
+
+    .row{
+        width:100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}    
+
+    .main-nav{display: none;}
+
+    .mobile-icon{ display: inline-block; 
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{float: left;}
+
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+
+    h1{font-size: 180%;}
+}
+
+#box{
+    height: 300px;
+    width: 1000px;
+    background-color:#2D2D2D;
+    border-radius: 5px;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main{
+    height: 600px;
+    width: 460px;
+    background-color:white;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#loginform,#signupform{
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#loginform{
+    top:45%;
+    left: 75%;
+    visibility: hidden;
+}
+#loginform h1,#signupform h1{
+    font-family: arial;
+    font-size: 28px;
+    color:turquoise;
+}
+#signupform h3{
+    font-family: arial;
+    font-size: 15px;
+    color:turquoise;
+}
+#signupform input[type=radio], input[type=checkbox] {
+  color: black;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 6px;
+
+}
+#loginform input,#signupform input[type=text], input[type=email], input[type=password], input[type=number], input[type=date]{
+    height: 40px;
+    width: 300px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin: 5px;
+}
+#loginform button,#signupform button{
+    height: 35px;
+    width: 130px;
+    background-color:turquoise;
+    font-family: monospace;
+    font-size: 16px;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 175px;
+}
+#loginform button:hover, #signupform button:hover{
+    background: #efed40;
+    color: #262626;
+    cursor: pointer;
+}
+#login_btn,#signup_btn{
+    height: 35px;
+    width: 120px;
+    background-color:transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    left: 75%;
+    top:65%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+#login_btn{
+    left: 25%;
+}
+#login_btn:hover,#signup_btn:hover{
+    background-color:white;
+    color:#2d2d2d;
+    cursor: pointer;
+}
+#login_msg,#signup_msg{
+    font-family: arial;
+    font-size: 25px;
+    color:white;
+    position: absolute;
+    top:35%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#login_msg{
+    left: 25%;
+}
+#signupform span{
+    font-family: arial;
+    font-size: 14px;
+    color:black;
+}
+
+/*NEW STYLE*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: black;
+    background-color: black;
+    font-family: 'Flamenco', cursive;
+
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%; 
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+
+.main-content-header{
+    width: 1180px;
+    padding:0 2%;
+    position: absolute;
+    /*border: 1px solid red;*/
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+h1{
+    color: #fff;
+    font-size: 240%;  
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+p{
+    background-color: black;
+    color: white;
+    font-size: 60%;  
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.3s, border 0.3s, color 0.3;
+}
+
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+
+
+.colorchange{
+    animation:  colorchangethapa 1s infinite;
+}
+
+@keyframes colorchangethapa{
+    0%{color: red;}
+    25%{color:#bf55ec; ;}
+    50%{ color: white; }
+    100%{ color:#bf55ec;  }
+}
+
+.mobile-icon{display: none;}
